@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+.left {
+  width: 35%;
+  text-align: center;
+}
+.right {
+  width: 65%;
+}
+.Container{
+  width: auto;
+  border: 1px solid grey;
+  background-color: #ede1f7;
+  display:bloc;
+}
+.info-text{
+  color:#e7d7f5;
+}
+.btn{
+  text-align: center;
+}
