@@ -30,12 +30,22 @@ class App extends React.Component{
 
   };
   handlebtn=()=>{
+    if(this.state.show){
       this.setState({
         StyleContainer:{display:"none"},
         buttonMsg:"Hidden !",
-        life:"still alive"
-      })
-  }
+        life:"still alive",
+        show:false})
+    }else{
+      this.setState({
+        StyleContainer:{
+          width: "auto",
+          border: "1px solid grey",
+          backgroundColor: "#ede1f7"},
+        buttonMsg:"Hide",
+        life:"alive",
+        show:true
+      })}}
   updatetime=()=>{
     this.setState(prevState=>{return {time:prevState.time+1} })
   }
