@@ -52,9 +52,7 @@ class App extends React.Component{
   componentDidMount() {
     setInterval(() => this.updatetime(),1000);
   }
-  componentWillUnmount() {
-   clearInterval(this.timerID);
-  }
+
   render(){
     return (
       <React.Fragment>
